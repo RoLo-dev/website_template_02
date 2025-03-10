@@ -1,0 +1,97 @@
+:root{
+    --font-size: 16px;
+    --mustard-yellow: #E2A81E;
+    --yellow-hover: #c78f00;
+    --matcha: #c2c282;
+    --dark-moss-green: #4F4D1F;
+    --vanilla: #f2ede1;
+    --oatmeal:#eae0d0;
+    --off-white: #F0EFEA;
+    --charcoal: #3b3834;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: var(--font-size);
+    font-family: "Epilogue", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    color: var(--charcoal);
+    background-color: var(--vanilla);
+}
+ul{list-style: none;}
+h2{
+    font-size: 2.25rem;
+    margin-bottom: 3.5rem;
+}
+a{
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+p{line-height: 1.5;}
+section{padding: 5.5rem 0;}
+button{
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+a:focus, button:focus,
+form input:focus, form textarea:focus{
+    outline: 1px dashed #000;
+}
+button, form, input,
+textarea{
+    font-family: "Epilogue", serif;
+}
+.wrapper{
+    width: 78%;
+    margin: 0 auto;
+    max-width: 1600px;
+}
+.small-wrapper{
+    width: 70%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+.bold{font-weight: 700;}
+.pics{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.cta{
+    padding: 17px 1.125rem 14px;
+    color: #000;
+    background-color: var(--mustard-yellow);
+    text-align: center;
+    border-radius: 5px;
+    display: block;
+    width: auto;
+    max-width: 225px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 0.9rem;
+}
+.cta:active{transform: scale(0.97);}
+
+
+
+@media screen and (min-width: 922px){
+        .cta:hover{background-color: var(--yellow-hover);}
+}
+@media (max-width: 921px) {
+    :root{--font-size: 14px;}
+    .cta:active{background-color: var(--yellow-hover);}
+}
+@media (max-width: 480px) {
+    :root{--font-size: 12px;}
+    .wrapper, .small-wrapper{width: 85%;}
+    .cta{font-size: 1.05rem;}
+}
