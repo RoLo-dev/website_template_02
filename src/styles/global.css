@@ -1,13 +1,15 @@
 :root{
     --font-size: 16px;
-    --mustard-yellow: #E2A81E;
-    --yellow-hover: #c78f00;
-    --matcha: #c2c282;
-    --dark-moss-green: #4F4D1F;
-    --vanilla: #f2ede1;
-    --oatmeal:#eae0d0;
-    --off-white: #F0EFEA;
-    --charcoal: #3b3834;
+    --backgrd-color: #F8F5F5;
+    
+    --soft-color-one: #6B7A88;
+    --soft-color-two: #677690;
+    --dark-color-one: #022F49;
+    --dark-color-two: #053041;
+
+    /* --vanilla: #E7AF97;
+    --navy-blue-prpl: rgba(71,73,88,.475);
+    --deep-blue: #323033; */
 }
 *{
     padding: 0;
@@ -21,8 +23,8 @@ html{
     font-style: normal;
     overflow-y: scroll;
     scroll-behavior: smooth;
-    color: var(--charcoal);
-    background-color: var(--vanilla);
+    color: var(--soft-color-two);
+    background-color: var(--backgrd-color);
 }
 ul{list-style: none;}
 h2{
