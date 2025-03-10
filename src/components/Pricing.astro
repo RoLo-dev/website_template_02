@@ -1,0 +1,122 @@
+<section>
+    <div class="pricing-container wrapper">
+        <h2>Our Pricing Plan</h2>
+
+        <div class="card-container">
+            <div class="card">
+                <div>
+                    <p>STARTING FROM</p>
+                    <h3>$24.99/mo</h3>
+
+                    <ul>
+                        <li>2 Users</li>
+                        <li>Lifetime access</li>
+                        <li>Free Updates</li>
+                        <li>1 site</li>
+                    </ul>
+
+                    <a href="#" class="cta">Purchase Now</a>
+                </div>
+            </div>
+            <div class="card card-two">
+                <div>
+                    <p>STARTING FROM</p>
+                    <h3>$34.99/mo</h3>
+    
+                    <ul>
+                        <li>3 Users</li>
+                        <li>Lifetime access</li>
+                        <li>Free Updates</li>
+                        <li>2 sites</li>
+                    </ul>
+    
+                    <a href="#" class="cta">Purchase Now</a>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <p>STARTING FROM</p>
+                    <h3>$94.99/mo</h3>
+    
+                    <ul>
+                        <li>6 Users</li>
+                        <li>Lifetime access</li>
+                        <li>Free Updates</li>
+                        <li>4 sites</li>
+                        <li>24/7 Support</li>
+                    </ul>
+    
+                    <a href="#" class="cta">Purchase Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="getting-started">
+    <div class="gettingStarted-container wrapper">
+        <h2>Why Wait? Get Started Now</h2>
+        <p class="slug">Don't look any further and let's work together.</p>
+    </div>
+</section>
+
+<style>
+    section h2{text-align: center;}
+    .card-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 2rem 0;
+    }
+    .card-container .card{
+        padding: 2rem 5rem;
+        text-align: center;
+        border-radius: 10px;
+        border: 1px solid #d3cabc;
+        /* border: 1px solid var(--dark-moss-green); */
+        height: 415px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+
+    }
+    .card-container .card-two{
+        height: 475px;
+        background-image: linear-gradient(to top, #c1c161 0%, #c1c161 0%, #d4d4b1 100%);
+    }
+    .card p{
+        margin-bottom: 1rem;
+        font-weight: 500;
+    }
+    .card h3{
+        font-size: 2rem;
+        font-weight: 900;
+        /* color: var(--mustard-yellow); */
+        color: var(--dark-moss-green);
+        margin-bottom: 1.75rem;
+    }
+    .card ul{margin-bottom: 2.5rem;}
+    .card ul li{
+        margin-bottom: 1rem;
+        font-size: 1.125rem;
+    }
+    .card ul li:last-child{margin-bottom: 0;}
+
+    #getting-started{background-color: var(--oatmeal);}
+    #getting-started h2{margin-bottom: 1rem;}
+    #getting-started .slug{
+        text-align: center;
+        font-weight: 500;
+        font-size: 1.25rem;
+    }
+    @media screen and (max-width: 921px){
+        .card-container .card{height: 350px;}
+        .card-container .card-two{height: 400px;}
+    }
+    @media screen and (max-width: 480px){
+        .card-container .card,
+        .card-container .card-two{height: 325px;}
+    }
+</style>

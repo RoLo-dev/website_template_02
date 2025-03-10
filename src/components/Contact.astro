@@ -1,0 +1,135 @@
+<section>
+    <div class="contact-container wrapper">
+        <div class="location-info">
+            <div class="card">
+                <div class="inner-col">
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="inner-col">
+                    <h4>Email</h4>
+                    <a href="mailto:" title="email" aria-labe="Email link">info@example.com</a>
+                    <a href="mailto:" title="email" aria-labe="Email link">sales@example.com</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="inner-col">
+                    <i class="fa-solid fa-phone-flip"></i>
+                </div>
+                <div class="inner-col">
+                    <h4>Phone Number</h4>
+                    <a href="tel:+" title="phone" aria-labe="Phone link">(123) 456 - 7891</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="inner-col">
+                    <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="inner-col">
+                    <h4>Location Address</h4>
+                    <a href="mailto:" title="email" aria-labe="Email link">789 Location Drive, <br /> Stanton, CA 99000</a>
+                </div>
+            </div>
+        </div>
+        <div class="form-map">
+            <div class="col form-col">
+                <form action="">
+                    <input type="text" name="name" placeholder="Name">
+                    <input type="number" name="phone" placeholder="Phone">
+                    <input type="email" name="email" placeholder="Email">
+                    <textarea placeholder="Leave us a message"></textarea>
+                    <button tabindex="0" class="cta submit-btn" title="Submit" aria-label="Submit button">SUBMIT</button>
+                </form>
+            </div>
+            <div class="col map-col">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13274.928141980266!2d-118.05294513702397!3d33.71588212141937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dd25b7e9c5f549%3A0xbee17e00298b9321!2sBuon%20Gusto!5e0!3m2!1sen!2sus!4v1740449957011!5m2!1sen!2sus" width="" height="" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<style>
+    .location-info{
+        background-color: var(--oatmeal);
+        padding: 2rem 3rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem 1rem;
+        justify-content: space-between;
+        margin-bottom: 2.5rem;
+    }
+    .location-info .card{
+        display: flex;
+        gap: 0 14px;
+        width: 22%;
+        min-width: 210px;
+    }
+    .card .inner-col:last-of-type{
+        width: calc(100% - 30px);
+        display: flex;
+        flex-direction: column;
+    }
+    .card .inner-col i{font-size: 1.5rem;}
+    .card .inner-col h4{margin-bottom: 10px;}
+    .card .inner-col a{color: var(--charcoal);}
+    .form-map{
+        display: flex;
+        justify-content: space-between;
+    }
+    .form-map .form-col{width: calc(100% - 525px);}
+    form{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 1.75rem 1rem;
+    }
+    form input{
+        width: 48%;
+        height: 3.5rem;
+        padding: 0 10px;
+        border: 1px solid var(--charcoal);
+        color: var(--charcoal);
+        background-color: var(--vanilla);
+    }
+    form textarea{
+        width: 100%;
+        height: 10rem;
+        padding: 10px;
+        color: var(--charcoal);
+        border: 1px solid var(--charcoal);
+        background-color: var(--vanilla);
+    }
+    form .submit-btn{
+        width: 50%;
+        border: 0;
+    }
+    .form-map .map-col{
+        width: 475px;
+        height: auto;
+    }
+    .form-map iframe{
+        width: 100%;
+        height: 100%;
+    }
+
+    @media screen and (max-width: 1250px){
+        .form-map .form-col{width: calc(100% - 425px);}
+        .form-map .map-col{width: 400px;}
+    }
+    @media screen and (max-width: 1060px){
+        form input{width: 100%;}
+    }
+    @media screen and (max-width: 875px){
+        .form-map{flex-direction: column;}
+        .form-map .col{width: 100%;}
+        .form-map .form-col{order: 2;}
+        .form-map .map-col{
+            order: 1;
+            margin-bottom: 3rem;
+            height: 250px;
+        }
+    }
+    @media screen and (max-width: 661px){
+        .location-info{justify-content: center;}
+    }
+</style>
