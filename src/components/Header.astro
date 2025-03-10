@@ -1,7 +1,7 @@
 <header id="header">
     <div class="header-container wrapper">
-        <div class="left-col">
-            <a href="#" class="logo" title="logo" aria-label="Logo">BZNZ</a>
+        <!-- <div class="left-col"> -->
+            <a href="#" class="logo" title="logo" aria-label="Logo">SUGO</a>
 
             <nav class="header-nav">
                 <ul>
@@ -17,7 +17,7 @@
                     <li>
                         <a href="">Support</a>
                     </li>
-                    <li class="mobile-el">
+                    <li>
                         <a href="#" class="cta">Get Started</a>
                     </li>
                 </ul>
@@ -26,10 +26,7 @@
             <button class="mobile-el hamburger-btn">
                 <span class="hamburger-icon"></span>
             </button>
-        </div>
-        <div class="right-col">
-            <a href="#" class="cta">Get Started</a>
-        </div>
+        <!-- </div> -->
     </div>
 </header>
 
@@ -37,10 +34,9 @@
     header{
         width: 100%;
         padding: 1.5rem 0;
-        background-color: rgba(103, 118, 144, 0.8);
+        background-color: rgba(248, 245, 245, 0.8);
         backdrop-filter: blur(10px);
         -webkit-backdrop-filter: blur(10px);
-        /* border-bottom: 1px solid rgba(146, 172, 172, 0.8); */
         position: fixed;
         top: 0;
         left: 0;
@@ -52,19 +48,14 @@
         justify-content: space-between;
         align-items: center;
     }
-    .header-container .left-col{
-        display: flex;
-        align-items: center;
-        gap: 0 5.5rem;
-    }
-    .left-col .logo{
+    .header-container .logo{
         font-family: "Inter", serif;
         letter-spacing: 1.25px;
         font-size: 1.75rem;
         font-weight: 700;
         font-style: normal;
         font-optical-sizing: auto;
-        color: #000;
+        color: var(--dark-color-two);
     }
     .header-container nav ul li{
         display: inline-block;
@@ -72,18 +63,17 @@
     }
     .header-container nav ul li:last-child{margin-right: 0;}
     .header-container nav ul li a{color: var(--dark-color-two);}
-    .header-container nav ul li .cta{color: #000;}
+    .header-container nav ul li .cta{color: var(--backgrd-color);}
 
     @media screen and (min-width: 922px){
         .header-container nav ul li a:hover{
-            color: var(--dark-moss-green);
+            color: var(--soft-color-two);
             text-decoration: underline;
         }
         .mobile-el{display: none !important;}
     }
     @media screen and (max-width: 921px){
         .header-container nav ul li a:active{color: var(--dark-moss-green);}
-        .header-container .right-col{display: none;}
 
         .hamburger-btn{
             border: 0;
@@ -99,7 +89,7 @@
         .hamburger-icon, .hamburger-icon:before, .hamburger-icon:after {
             width: 2.25rem;
             height: 2px;
-            background: var(--charcoal);
+            background: var(--dark-color-two);
             border-radius: 30px;
             transition: all 0.3s ease-in-out;
         }
@@ -115,32 +105,21 @@
         .animate::before{ bottom:0px;transform: rotate(45deg); }
         .animate::after{ transform: rotate(135deg) translate(-7px, 6px); }
 
-        .header-container .left-col{
-            width: 100%;
-            justify-content: space-between;
-        }
-
-        .left-col nav{
+        .header-container nav{
             position: fixed;
             width: 100%;
             padding: 4rem 0;
             right: 0;
             top: 76px;
-            /* height: 100vh; */
+            height: 100vh;
             text-align: center;
             transform: translate(100%, 0px);
-            /* background-color: var(--oatmeal); */
-            border-radius: 0 0 10px 10px;
-            background-color: rgba(234, 224, 208, 0.95);
-            /* background-color: rgba(234, 224, 208, 0.9);
-            -webkit-backdrop-filter: blur(10px);
-            backdrop-filter: blur(10px);
-            will-change: backdrop-filter; */
+            /* background-color: rgba(234, 224, 208, 0.95); */
+            background-color: var(--backgrd-color);
             transition: all 0.3s ease-in-out;
             z-index: 11;
-            box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
         }
-        .left-col nav.show-nav{
+        .header-container nav.show-nav{
             transform: translateY(0px);
         }
         .header-container nav ul li{
@@ -157,7 +136,7 @@
         }
     }
     @media screen and (max-width: 480px){
-        .left-col nav{top: 65px;}
+        .header-container nav{top: 65px;}
     }
 </style>
 <script>
@@ -169,9 +148,10 @@
         if (scrollY > 100) {
             header.style.backgroundColor = 'rgba(237, 243, 243, 0.8)';
             header.style.backdropFilter = 'blur(10px)';
-            header.style.borderBottom = '1px solid rgba(146, 172, 172, 0.8)'
+            header.style.borderBottom = '1px solid rgba(185, 206, 206, 0.8)'
         }else{
-            header.style.borderBottom = '0'
+            header.style.borderBottom = '0';
+            header.style.backgroundColor = 'rgba(248, 245, 245, 0.8)';
         }
     });
 

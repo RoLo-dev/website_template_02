@@ -68,29 +68,36 @@ textarea{
 }
 .cta{
     padding: 17px 1.125rem 14px;
-    color: #000;
-    background-color: var(--mustard-yellow);
+    color: var(--backgrd-color);
+    background-color: var(--dark-color-one);
     text-align: center;
     border-radius: 5px;
     display: block;
     width: auto;
     max-width: 225px;
-    text-decoration: none;
+    text-decoration: none !important;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 0.5px;
     font-size: 0.9rem;
+    border: 1px solid var(--dark-color-one);
 }
 .cta:active{transform: scale(0.97);}
 
 
 
 @media screen and (min-width: 922px){
-        .cta:hover{background-color: var(--yellow-hover);}
+        .cta:hover{
+            background-color: transparent;
+            color: var(--dark-color-one) !important;
+        }
 }
 @media (max-width: 921px) {
     :root{--font-size: 14px;}
-    .cta:active{background-color: var(--yellow-hover);}
+    .cta:active{
+        background-color: transparent;
+        color: var(--dark-color-one) !important;
+    }
 }
 @media (max-width: 480px) {
     :root{--font-size: 12px;}
