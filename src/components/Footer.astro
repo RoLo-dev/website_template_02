@@ -1,0 +1,143 @@
+<footer>
+    <div class="footer-container wrapper">
+        <div class="col">
+            <a href="#" title="Logo" aria-label="Logo link" class="logo">BZNZ</a>
+            <div class="social-icons">
+                <a href="" title="Facebook" aria-label="Facebook link"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="" title="Linkedin" aria-label="Linkedin link"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="" title="Instagram" aria-label="Instagram link"><i class="fa-brands fa-instagram"></i></a>
+                <a href="" title="YouTube" aria-label="YouTube link"><i class="fa-brands fa-youtube"></i></a>
+                <a href="" title="X - twitter" aria-label="X - twitter link"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+        </div>
+        <div class="col">
+            <h4>Company</h4>
+            <ul>
+                <li>
+                    <a href="" title="" aria-label="">About</a>
+                </li>
+                <li>
+                    <a href="" title="" aria-label="">Services</a>
+                </li>
+                <li>
+                    <a href="" title="" aria-label="">Careers</a>
+                </li>
+                <li>
+                    <a href="" title="" aria-label="">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+        <div class="col">
+            <h4>Customer</h4>
+            <ul>
+                <li>
+                    <a href="" title="" aria-label="">Client Support</a>
+                </li>
+                <li>
+                    <a href="" title="" aria-label="">Company Story</a>
+                </li>
+                <li>
+                    <a href="" title="" aria-label="">Pricing</a>
+                </li>
+                <li>
+                    <a href="" title="" aria-label="">FAQ</a>
+                </li>
+            </ul>
+        </div>
+        <div class="col">
+            <h4>Subscribe to Newsletter</h4>
+            <p>Enter your email to stay updated</p>
+            <form action="#">
+                <div>
+                    <input type="text" placeholder="Your Email">
+                    <button type="submit"><i class="fa-solid fa-envelope"></i></button>
+                </div>
+            </form>
+        </div>
+    </div>
+</footer>
+
+<style>
+    footer{
+        width: 100%;
+        padding: 4rem 0;
+        background-color: var(--matcha);
+        color: var(--charcoal);
+        /* color: var(--off-white);
+        background-color: var(--charcoal); */
+    }
+    footer .logo{
+        font-family: "Inter", serif;
+        letter-spacing: 1.25px;
+        font-size: 1.75rem;
+        font-weight: 700;
+        font-style: normal;
+        font-optical-sizing: auto;
+        color: #000;
+        /* color: var(--off-white); */
+    }
+    .footer-container{
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem 1.5rem;
+        flex-wrap: wrap;
+    }
+    .footer-container .col{
+        width: 20%;
+        min-width: 200px;
+    }
+    footer .social-icons{
+        margin-top: 2rem;
+        display: flex;
+        gap: 0 1.25rem;
+    }
+    footer .social-icons a{
+        font-size: 1.125rem;
+        color: var(--charcoal);
+        /* color: var(--off-white); */
+    }
+    .col h4{margin-bottom: 2rem;}
+    .col ul li{margin-bottom: 13px;}
+    .col ul li:last-child{margin-bottom: 0;}
+    .col ul li a{color: var(--charcoal);}
+    /* .col ul li a{color: var(--off-white);} */
+    .col form{margin-top: 1rem;}
+    .col form div{display: flex;}
+    .col form input{
+        padding: 0 8px;
+        height: 2.25rem;
+        font-size: 1rem;
+        background-color: transparent;
+        color: var(--charcoal);
+        border: 1px solid var(--charcoal);
+        /* color: var(--off-white);
+        border: 1px solid var(--off-white); */
+    }
+    .col form input::placeholder{
+        color: var(--charcoal);
+    }
+    .col form button{
+        /* background-color: var(--mustard-yellow); */
+        background-color: var(--dark-moss-green);
+        height: 2.25rem;
+        padding: 0 10px;
+        border: 0;
+        font-size: 1.25rem;
+        color: var(--off-white);
+    }
+
+    @media screen and (min-width: 922px){
+        footer .social-icons a:hover,
+        .col ul li a:hover{color: var(--yellow-hover);}
+        .col form button:hover{
+            background-color: var(--yellow-hover);
+        }
+    }
+    @media screen and (max-width: 921px){
+        footer .social-icons a:active,
+        .col ul li a:active{color: var(--yellow-hover);}
+        .col form button:active{
+            background-color: var(--yellow-hover);
+        }
+    }
+</style>
