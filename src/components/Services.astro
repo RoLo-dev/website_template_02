@@ -1,11 +1,20 @@
 <section>
     <div class="services-container wrapper">
-        <div class="col img-col"></div>
-        <div class="col text-col">
+        <div class="col text-col left-col">
             <div>
-                <h2>Problem/Solution Section</h2>
-                <!-- We develop & create captivating sites -->
+                <h2>About Us</h2>
                 <div class="text-container">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta exercitationem vitae consequuntur ducimus temporibus, quam architecto reprehenderit debitis quaerat nihil tempore enim officia odio nam obcaecati nostrum iste assumenda itaque.</p>
+                    <p>At consectetur praesentium rerum, iusto laboriosam error optio quam aperiam. Ratione fugiat nostrum consequatur at blanditiis numquam unde omnis ipsa veniam nesciunt iste ipsam nisi.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col text-col middle-col">
+            <div>
+                <h2>Why Choose Us</h2>
+                
+                <div class="text-container">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ratione optio odio vitae illo consequuntur quam tenetur dicta illum et suscipit quia, hic sint saepe, autem natus eaque? Architecto, fuga.</p>
                     <div class="row">
                         <div class="inner-col"><i class="fa-solid fa-circle-dot"></i></div>
                         <div class="inner-col">
@@ -20,39 +29,58 @@
                             <p>Developer experience is our #1 priority, entire library is designed, coded, and organized in a way that saves hundreds of hours and increases productivity.</p>
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="inner-col"><i class="fa-solid fa-circle-dot"></i></div>
+                        <div class="inner-col">
+                            <h3>Refreshing Design</h3>
+                            <p>Clean, refreshing and high-quality that gives positive vibes. Figma source file also provided so you can use to prototype, experiment, play or adjust.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </div>
+        <div class="col img-col">
+            <figure>
+                <img src="https://images.unsplash.com/photo-1535957998253-26ae1ef29506?q=80&w=3605&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="pics" alt="" srcset="">
+            </figure>
+            <figure>
+                <img src="https://images.unsplash.com/photo-1560250056-07ba64664864?q=80&w=3851&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="pics" alt="" srcset="">
+            </figure>
         </div>
     </div>
 </section>
 
 <style>
-    section{background-color: var(--matcha);}
     .services-container{
         display: flex;
-        justify-content: flex-end;
-        height: 500px;
+        align-items: center;
+        justify-content: center;
     }
-    .services-container .col{width: 45%;}
+    .left-col{
+        width: 30%;
+        background-color: #fff;
+        color: var(--dark-color-two);
+        border-radius: 15px 0 0 15px;
+        padding: 4rem 2rem;
+        box-shadow: rgba(0, 0, 0, 0.15) -1.95px 1.95px 2.6px;
+    }
+    .middle-col{
+        width: 40%;
+        border-radius: 15px;
+        padding: 4rem 2rem;
+        background-color: var(--soft-color-two);
+        color: var(--backgrd-color);
+        box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    }
     .services-container .img-col{
         width: 30%;
-        background-color: var(--oatmeal);
-        margin-right: 10rem;
+        height: 600px;
         position: relative;
+        display: flex;
+        flex-direction: column;
     }
-    .services-container .img-col:before{
-        content: '';
-        height: 100%;
-        width: 100%;
-        background-image: url('https://images.unsplash.com/photo-1560250056-07ba64664864?q=80&w=3851&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        position: absolute;
-        top: -25px;
-        left: -25px;
-        z-index: 1;
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    .services-container .img-col figure{
+        height: 50%;
     }
     .services-container .text-col{
         display: flex;
@@ -76,6 +104,8 @@
     }
     .text-col .row .inner-col:last-of-type{width: calc(100% - 40px);}
     .row h3{margin-bottom: 1rem;}
+
+
 
     @media screen and (max-width: 1400px){
         .services-container .img-col{
