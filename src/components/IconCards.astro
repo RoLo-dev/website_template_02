@@ -1,0 +1,81 @@
+<section>
+    <div class="icon-card-container wrapper">
+        <h2>Benefits Section</h2>
+
+        <div class="card-container">
+            <div class="card">
+                <figure>
+                    <i class="fa-solid fa-thumbs-up"></i>
+                </figure>
+                <h3>Easy to Use</h3>
+                <p>Ipsum dolor quibusdam lorem aliquam nobis temporibus tempora comprar dolor.</p>
+            </div>
+            <div class="card">
+                <figure>
+                    <i class="fa-solid fa-table-columns"></i>
+                </figure>
+                <h3>Customizable</h3>
+                <p>Lorem ipsum dolor quibusdam aliquam nobis temporibus trust tempora saluda y sonrie.</p>
+            </div>
+            <div class="card">
+                <figure>
+                    <i class="fa-solid fa-paint-roller"></i>
+                </figure>
+                <h3>Great Design</h3>
+                <p>Lorem ipsum dolor quibusdam aliquam nobis temporibus eclipse tempora soluta.</p>
+            </div>
+            <div class="card">
+                <figure>
+                    <i class="fa-solid fa-comment-dots"></i>
+                </figure>
+                <h3>Any time Support</h3>
+                <p>Lorem ipsum dolor quibusdam aliquam nobis temporibus ipsum mucho amor.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<style>
+    section{background-color: var(--matcha);}
+    section h2{text-align: center;}
+    section .card-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 4rem 2.5rem;
+    }
+    .card-container .card{
+        width: 22%;
+        min-width: 225px;
+        text-align: center;
+    }
+    .card figure{
+        /* background-color: var(--dark-moss-green); */
+        background-color: var(--oatmeal);
+        width: 80px;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        border-radius: 7px;
+        margin-bottom: 1.75rem;
+        font-size: 2.5rem;
+        color: var(--matcha);
+        border: 1px solid #d3cabc;
+    }
+    .card h3{
+        font-size: 1.3rem;
+        text-align: center;
+        margin-bottom: 14px;
+    }
+
+    @media screen and (max-width: 1310px){
+        .card-container .card{min-width: 45%;}
+    }
+    @media screen and (max-width: 600px){
+        .card-container .card{min-width: 75%;}
+        section .card-container{justify-content: center;}
+    }
+</style>
