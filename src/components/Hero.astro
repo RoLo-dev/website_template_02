@@ -2,20 +2,22 @@
     <div class="hero-container wrapper">
         <div class="col text-col">
             <div>
-                <h1>Building captivating and engaging websites for your business</h1>
-                <p class="slug">We help business owners like you nail the website that will clarify your message, generate more clients and amplify your profits</p>
+                <h1>Designing captivating and engaging websites for your business</h1>
+                <p class="slug">We help business owners like you nail the website that will clarify your message, generate more clients and amplify your profits.</p>
+
+                <a href="#" class="cta">Learn More</a>
             </div>
         </div>
         <div class="col img-col">
             <div class="inner-col big-img"></div>
-            <div class="inner-col two-img">
+            <!-- <div class="inner-col two-img">
                 <figure>
                     <img src="https://images.unsplash.com/photo-1707836916010-3c4ad261936c?q=80&w=2000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="pics" alt="">
                 </figure>
                 <figure>
                     <img src="https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?q=80&w=4140&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="pics" alt="">
                 </figure>
-            </div>
+            </div> -->
         </div>
     </div>
 </section>
@@ -24,31 +26,36 @@
     section{margin-top: 6rem;}
     .hero-container{display: flex;}
     .hero-container .text-col{
-        width: 40%;
+        width: 50%;
         padding-right: 2rem;
         display: flex;
         align-items: center;
     }
+    .text-col .cta{margin-top: 3rem;}
     .col h1{
         font-size: 2.85rem;
         margin-bottom: 2rem;
         line-height: 1.25;
+        text-transform: uppercase;
         color: var(--dark-color-two);
     }
     .col .slug{font-size: 1.125rem;}
     .hero-container .img-col{
-        width: 60%;
+        width: 50%;
         display: flex;
         height: 600px;
-        justify-content: space-between;
+        justify-content: center;
     }
     .img-col .big-img{
-        width: 58%;
-        background-image: url('https://images.unsplash.com/photo-1481487196290-c152efe083f5?q=80&w=4262&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+        width: 95%;
+        background-image: url('https://images.unsplash.com/photo-1726065235239-b20b88d43eea?q=80&w=3870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
         height: 100%;
+        border: 20px solid var(--soft-color-two);
+        border-radius: 25px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     }
     .img-col .two-img{
         width: 37%;
