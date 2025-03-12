@@ -68,7 +68,7 @@ textarea{
     object-fit: cover;
 }
 .cta{
-    padding: 17px 1.125rem 14px;
+    padding: 19px 1.125rem 16px;
     color: var(--backgrd-color);
     background-color: var(--dark-color-one);
     text-align: center;
@@ -80,7 +80,7 @@ textarea{
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 0.5px;
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     border: 1px solid var(--dark-color-one);
 }
 .cta:active{transform: scale(0.97);}

@@ -4,7 +4,7 @@
         <div class="client-test-container">
             <div class="test-card">
                 <i class="fa-solid fa-quote-left"></i>
-                <p>Sit amet consectetur adipisicing elit. Ullam dignissimos incidunt magni maxime laudantium cum neque deleniti distinctio ab, beatae quam ducimus porro rerum error. Repellendus, commodi.</p>
+                <p>Sit amet consectetur adipisicing elit. Ullam dignissimos incidunt magni maxime laudantium cum neque deleniti distinctio ab, beatae quam ducimus porro rerum repellendus, commodi.</p>
 
                 <div class="author">
                     <h4>- Jemma Vo</h4>
@@ -28,7 +28,7 @@
             </div>
             <div class="test-card">
                 <i class="fa-solid fa-quote-left"></i>
-                <p>Amet consectetur adipisicing elit. Ullam dignissimos incidunt magni maxime laudantium cum neque deleniti distinctio ab, beatae quam ducimus porro rerum error.</p>
+                <p>Amet consectetur adipisicing elit. Ullam dignissimos incidunt magni maxime laudantium cum neque deleniti distinctio ab, beatae quam ducimus porro rerum quam error elit.</p>
 
                 <div class="author">
                     <h4>- Christy Nguyen</h4>
@@ -36,7 +36,7 @@
             </div>
             <div class="test-card">
                 <i class="fa-solid fa-quote-left"></i>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam dignissimos incidunt magni maxime laudantium cum neque deleniti distinctio ab, beatae quam ducimus porro rerum error.</p>
+                <p>Lorem quam amet consectetur adipisicing elit. Ullam dignissimos incidunt magni maxime laudantium cum neque deleniti distinctio ab, beatae quam ducimus porro rerum quam.</p>
 
                 <div class="author">
                     <h4>- Mayra Gonzalez</h4>
@@ -50,9 +50,19 @@
                     <h4>- Nick Holmes</h4>
                 </div>
             </div>
+            <div class="test-card">
+                <i class="fa-solid fa-quote-left"></i>
+                <p>The dignissimos magni maxime laudantium cum neque deleniti distinctio ab, beatae quam ducimus porro rerum error repellendus, commodi  ipsam quam commodi esse.</p>
+
+                <div class="author">
+                    <h4>- Rozalee L.</h4>
+                </div>
+            </div>
         </div>
-        <h2>Why Wait? Get Started Now</h2>
-        <p class="slug">Don't look any further and let's work together.</p>
+        <h2>Let's not waste any more time</h2>
+        <!-- <h2>Why Wait? Get Started Now</h2> -->
+        <p class="slug">Why wait? End your search here and let's work together.</p>
+        <a href="#" class="cta">GET IN TOUCH</a>
     </div>
 </section>
 
@@ -62,7 +72,7 @@
         color: var(--backgrd-color);
     }
     section h2{text-align: center;}
-    section h2:last-of-type{margin-bottom: 1rem;}
+    section h2:last-of-type{margin-bottom: 0.75rem;}
     .client-test-container{
         display: flex;
         gap: 2rem 1rem;
@@ -76,6 +86,7 @@
         color: var(--backgrd-color);
         width: 23%;
         min-width: 200px;
+        transition: all 0.3s ease-in-out;
     }
     .test-card i{
         padding: 5px 7px;
@@ -83,15 +94,30 @@
         color: var(--soft-color-two);
         border-radius: 30px;
         margin-bottom: 1rem;
+        transition: all 0.3s ease-in-out;
     }
-    .test-card p{
-        font-style: italic;
+    .test-card p{font-style: italic;}
+    .test-card .author{
+        margin-top: 1rem;
+        opacity: 0.75;
+        transition: all 0.3s ease-in-out;
     }
-    .test-card .author{margin-top: 1rem;}
-
     #getting-started .slug{
         text-align: center;
         font-weight: 500;
         font-size: 1.25rem;
+    }
+    section .cta{margin: 3rem auto 0;}
+    @media screen and (min-width: 922px){
+        .test-card:hover{
+            box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+        }
+        .test-card:hover i{
+            color: var(--backgrd-color);
+            border-color: var(--backgrd-color);
+        }
+        .test-card:hover .author{
+            opacity: 1;
+        }
     }
 </style>
