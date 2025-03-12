@@ -37,7 +37,7 @@ a{
     transition: all 0.2s ease-in-out;
 }
 p{line-height: 1.5;}
-section{padding: 5.5rem 0;}
+section{padding: 5rem 0;}
 button{
     cursor: pointer;
     transition: all 0.2s ease-in-out;
