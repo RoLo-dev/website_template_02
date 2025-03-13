@@ -90,14 +90,14 @@ textarea{
 @media screen and (min-width: 922px){
         .cta:hover{
             background-color: transparent;
-            color: var(--dark-color-two) !important;
+            color: var(--dark-color-two);
         }
 }
 @media (max-width: 921px) {
     :root{--font-size: 14px;}
     .cta:active{
         background-color: transparent;
-        color: var(--dark-color-two) !important;
+        color: var(--dark-color-two);
     }
 }
 @media (max-width: 480px) {

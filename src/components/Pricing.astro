@@ -3,7 +3,7 @@
         <h2>Our Pricing Plan</h2>
 
         <div class="card-container">
-            <div class="card">
+            <div class="card card-one">
                 <div>
                     <p>STARTER</p>
                     <h3>$24.99/mo</h3>
@@ -33,7 +33,7 @@
                     <a href="#" class="cta">Purchase Now</a>
                 </div>
             </div>
-            <div class="card">
+            <div class="card card-two">
                 <div>
                     <p>BUSINESS</p>
                     <h3>$94.99/mo</h3>
@@ -61,7 +61,7 @@
     .card-container{
         display: flex;
         justify-content: center;
-        align-items: center;
+        /* align-items: center; */
         flex-wrap: wrap;
         gap: 2rem;
     }
@@ -77,8 +77,21 @@
 
     }
     .card-container .card-two{
-        height: 475px;
-        background-image: linear-gradient(to top, #c1c161 0%, #c1c161 0%, #d4d4b1 100%);
+        background: var(--dark-color-two);
+        color: var(--backgrd-color);
+    }
+    .card-two .cta{
+        background-color: var(--backgrd-color);
+        color: var(--dark-color-two);
+    }
+    .card-two .cta:hover{
+        background-color: transparent;
+        border-color: var(--backgrd-color);
+        color: var(--backgrd-color);
+    }
+    .card-container .card-one{
+        background: var(--soft-color-two);
+        color: var(--backgrd-color);
     }
     .card p{
         margin-bottom: 1rem;
