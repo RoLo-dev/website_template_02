@@ -6,7 +6,7 @@
             <div class="card card-one">
                 <div>
                     <p>STARTER</p>
-                    <h3>$24.99/mo</h3>
+                    <h3>$9.99/mo</h3>
 
                     <ul>
                         <li>2 Users</li>
@@ -21,13 +21,13 @@
             <div class="card">
                 <div>
                     <p>BASIC</p>
-                    <h3>$34.99/mo</h3>
-    
+                    <h3>$27.99/mo</h3>
+
                     <ul>
                         <li>3 Users</li>
                         <li>Lifetime access</li>
                         <li>Free Updates</li>
-                        <li>2 sites</li>
+                        <li>3 sites</li>
                     </ul>
     
                     <a href="#" class="cta">Purchase Now</a>
@@ -37,12 +37,12 @@
                 <div>
                     <p>BUSINESS</p>
                     <h3>$94.99/mo</h3>
-    
+
                     <ul>
                         <li>6 Users</li>
                         <li>Lifetime access</li>
                         <li>Free Updates</li>
-                        <li>4 sites</li>
+                        <li>8 sites</li>
                         <li>24/7 Support</li>
                     </ul>
     
@@ -70,7 +70,7 @@
         text-align: center;
         border-radius: 10px;
         border: 1px solid var(--dark-color-one);
-        height: 415px;
+        height: 425px;
         display: flex;
         justify-content: center;
         background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
@@ -79,6 +79,7 @@
     .card-container .card-two{
         background: var(--dark-color-two);
         color: var(--backgrd-color);
+        border-color: var(--soft-color-two);
     }
     .card-two .cta{
         background-color: var(--backgrd-color);
@@ -95,19 +96,22 @@
     }
     .card p{
         margin-bottom: 1rem;
-        font-weight: 500;
+        font-weight: 800;
+        color: var(--dark-color-two);
     }
+    .card-two p{color: var(--backgrd-color);}
     .card h3{
         font-size: 2rem;
         font-weight: 900;
-        color: var(--dark-moss-green);
         margin-bottom: 1.75rem;
     }
     .card ul{margin-bottom: 2.5rem;}
     .card ul li{
         margin-bottom: 1rem;
         font-size: 1.125rem;
+        color: var(--dark-color-two);
     }
+    .card-two ul li{color: var(--backgrd-color);}
     .card ul li:last-child{margin-bottom: 0;}
 
     @media screen and (max-width: 921px){

@@ -1,0 +1,108 @@
+<section>
+    <div class="faq-container small-wrapper">
+        <div class="col title-col">
+            <div>
+                <h2>ANY QUESTIONS?<br/> WE GOT YOU.</h2>
+                <p></p>
+            </div>
+        </div>
+        <div class="col questions">
+
+            <div class="row">
+                <div class="question-row">
+                    <h4>How This Works?</h4>
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+                <div class="answer-row">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores impedit corporis dolores laudantium ipsam rem modi adipisci nesciunt deleniti, tempora labore, maxime dolorum. Velit dolores quidem ullam commodi error odio.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="question-row">
+                    <h4>What Kinds of Payment Do You Accept?</h4>
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+                <div class="answer-row">
+                    <p>Ipsum dolor sit amet consectetur adipisicing elit. Asperiores impedit corporis dolores laudantium ipsam rem modi adipisci nesciunt. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti delectus autem pariatur debitis laborum! Mollitia inventore recusandae ducimus id. Nostrum ipsam at rem dolor illo possimus voluptate aliquid officia assumenda.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="question-row">
+                    <h4>Question Three?</h4>
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+                <div class="answer-row">
+                    <p>Dolor sit amet consectetur adipisicing elit. Asperiores impedit corporis dolores laudantium ipsam rem modi adipisci nesciunt deleniti, tempora labore maxime dolorum velit dolores quidem.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="question-row">
+                    <h4>Question Four?</h4>
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+                <div class="answer-row">
+                    <p>Asperiores impedit corporis dolores laudantium ipsam rem modi adipisci nesciunt. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti delectus autem pariatur debitis laborum! Mollitia inventore recusandae ducimus id.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<style>
+    section{
+        background-image: url('https://images.unsplash.com/photo-1576595580361-90a855b84b20?q=80&w=3948&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+        background-blend-mode: lighten;
+        background-color: rgba(248,245,245,0.8);
+        background-position: left center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        /* height: 600px; */
+        color: var(--dark-color-two);
+    }
+    .faq-container{
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+        height: 100%;
+    }
+    .faq-container .col{width: 45%;}
+    .title-col{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: var(--dark-color-two);
+    }
+    .questions{
+        background-color: var(--soft-color-two);
+        padding: 2rem;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .questions .row{
+        border: 1px solid var(--dark-color-two);
+        background-color: var(--backgrd-color);
+        border-radius: 6px;
+    }
+    .question-row{
+        padding: 1rem 10px;
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer;
+    }
+    .question-row h4{
+        pointer-events: none;
+        font-size: 1.125rem;
+    }
+    .question-row i{
+        font-size: 1.35rem;
+        pointer-events: none;
+    }
+    .answer-row{
+        padding: 1rem 10px;
+        display: none;
+    }
+</style>
