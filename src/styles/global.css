@@ -70,7 +70,7 @@ textarea{
 .cta{
     padding: 19px 1.125rem 16px;
     color: var(--backgrd-color);
-    background-color: var(--dark-color-one);
+    background-color: var(--dark-color-two);
     text-align: center;
     border-radius: 5px;
     display: block;
@@ -81,7 +81,7 @@ textarea{
     text-transform: uppercase;
     letter-spacing: 0.5px;
     font-size: 0.95rem;
-    border: 1px solid var(--dark-color-one);
+    border: 1px solid var(--dark-color-two);
 }
 .cta:active{transform: scale(0.97);}
 
@@ -90,14 +90,14 @@ textarea{
 @media screen and (min-width: 922px){
         .cta:hover{
             background-color: transparent;
-            color: var(--dark-color-one) !important;
+            color: var(--dark-color-two) !important;
         }
 }
 @media (max-width: 921px) {
     :root{--font-size: 14px;}
     .cta:active{
         background-color: transparent;
-        color: var(--dark-color-one) !important;
+        color: var(--dark-color-two) !important;
     }
 }
 @media (max-width: 480px) {
