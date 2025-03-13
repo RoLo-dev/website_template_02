@@ -63,7 +63,7 @@
         justify-content: center;
         margin: 0 auto;
         border-radius: 7px;
-        margin-bottom: 1.75rem;
+        margin-bottom: 1rem;
         font-size: 2.5rem;
         color: var(--backgrd-color);
     }
@@ -73,11 +73,14 @@
         margin-bottom: 14px;
     }
 
-    @media screen and (max-width: 1310px){
+    @media screen and (max-width: 1389px){
         .card-container .card{min-width: 45%;}
     }
     @media screen and (max-width: 600px){
         .card-container .card{min-width: 75%;}
-        section .card-container{justify-content: center;}
+        section .card-container{
+            justify-content: center;
+            gap: 3rem 0;
+        }
     }
 </style>
