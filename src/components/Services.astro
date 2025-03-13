@@ -113,36 +113,44 @@
 
 
 
-    @media screen and (max-width: 1400px){
+    @media screen and (max-width: 1125px){
+        .services-container{flex-wrap: wrap;}
         .services-container .img-col{
-            width: 38%;
-            margin-right: 8rem;
-        }
-    }
-    @media screen and (max-width: 1185px){
-        .services-container .img-col{
-            width: 45%;
-            margin-right: 3rem;
-        }
-    }
-    @media screen and (max-width: 921px){
-        .services-container{
-            flex-direction: column;
-            height: auto;
-        }
-        .services-container .img-col{
-            height: 375px;
+            width: 40%;
             order: 2;
-            margin: 0 auto;
-            width: 55%;
-            min-width: 290px;
         }
-        .services-container .text-col{
+        .middle-col{
+            width: 60%;
             order: 1;
-            width: 100%;
-            margin-bottom: 5rem;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
         }
-        section{padding-bottom: 1rem;}
+        .left-col{
+            margin-top: 3rem;
+            width: 100%;
+            order: 3;
+            border-radius: 15px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        }
+    }
+    @media screen and (max-width: 715px){
+        .services-container{gap: 2rem 0;}
+        .services-container .img-col{
+            width: 100%;
+            order: 1;
+            flex-direction: row;
+            height: 250px;
+            justify-content: space-between;
+        }
+        .services-container .img-col figure{
+            height: auto;
+            width: 48%;
+        }
+        .services-container .img-col figure img{border-radius: 15px;}
+        .middle-col{
+            width: 100%;
+            order: 2;
+        }
+        .left-col{margin-top: 0;}
     }
     @media screen and (max-width: 480px){
         .text-col .row .inner-col:first-of-type{

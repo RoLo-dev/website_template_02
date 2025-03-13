@@ -103,5 +103,6 @@ textarea{
 @media (max-width: 480px) {
     :root{--font-size: 12px;}
     .wrapper, .small-wrapper{width: 85%;}
+    section{padding: 3.5rem 0;}
     .cta{font-size: 1.05rem;}
 }
