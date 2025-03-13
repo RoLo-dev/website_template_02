@@ -1,5 +1,5 @@
 <section>
-    <div class="contact-container wrapper">
+    <div class="contact-container small-wrapper">
         <div class="form-map">
             <div class="col form-col">
                 <form action="">
@@ -11,32 +11,37 @@
                 </form>
             </div>
             <div class="location-info">
-                <div class="card">
-                    <div class="inner-col">
-                        <i class="fa-solid fa-envelope"></i>
+                <h2>Contact Us</h2>
+                <p>Sit amet consectetur adipisicing elit inventore esse repudiandae autem corporis tempora enim aspernatur voluptas, blanditiis, dignissimos pariatur laboriosam minima dolorem nisi totam fugit voluptatum veero eum exercitationem.</p>
+                <div class="card-container">
+
+                    <div class="card">
+                        <div class="inner-col">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div class="inner-col">
+                            <h4>Email</h4>
+                            <a href="mailto:" title="email" aria-labe="Email link">info@example.com</a>
+                            <a href="mailto:" title="email" aria-labe="Email link">sales@example.com</a>
+                        </div>
                     </div>
-                    <div class="inner-col">
-                        <h4>Email</h4>
-                        <a href="mailto:" title="email" aria-labe="Email link">info@example.com</a>
-                        <a href="mailto:" title="email" aria-labe="Email link">sales@example.com</a>
+                    <div class="card">
+                        <div class="inner-col">
+                            <i class="fa-solid fa-phone-flip"></i>
+                        </div>
+                        <div class="inner-col">
+                            <h4>Phone Number</h4>
+                            <a href="tel:+" title="phone" aria-labe="Phone link">(123) 456 - 7891</a>
+                        </div>
                     </div>
-                </div>
-                <div class="card">
-                    <div class="inner-col">
-                        <i class="fa-solid fa-phone-flip"></i>
-                    </div>
-                    <div class="inner-col">
-                        <h4>Phone Number</h4>
-                        <a href="tel:+" title="phone" aria-labe="Phone link">(123) 456 - 7891</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="inner-col">
-                        <i class="fa-solid fa-location-dot"></i>
-                    </div>
-                    <div class="inner-col">
-                        <h4>Location Address</h4>
-                        <a href="mailto:" title="email" aria-labe="Email link">789 Location Drive, <br /> Stanton, CA 99000</a>
+                    <div class="card">
+                        <div class="inner-col">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div class="inner-col">
+                            <h4>Location Address</h4>
+                            <a href="mailto:" title="email" aria-labe="Email link">789 Location Drive, <br /> Stanton, CA 99000</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -45,22 +50,33 @@
 </section>
 
 <style>
+    .form-map{
+        display: flex;
+        justify-content: space-between;
+    }
+    .form-map .form-col{width: 35%;}
     .location-info{
+        width: 60%;
         background-color: var(--soft-color-two);
         color: var(--backgrd-color);
         padding: 2rem 3rem;
+        border-radius: 15px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    }
+    section h2{
+        color: var(--backgrd-color);
+        margin-bottom: 1.5rem;
+    }
+    .location-info p{margin-bottom: 2rem;}
+    .location-info .card-container{
         display: flex;
-        flex-direction: column;
         flex-wrap: wrap;
-        /* gap: 2rem 1rem; */
-        justify-content: space-between;
-        margin-bottom: 2.5rem;
-        width: 30%;
+        gap: 2rem 14px;
     }
     .location-info .card{
+        width: 45%;
         display: flex;
         gap: 0 14px;
-        width: 22%;
         min-width: 210px;
     }
     .card .inner-col:last-of-type{
@@ -71,21 +87,17 @@
     .card .inner-col i{font-size: 1.5rem;}
     .card .inner-col h4{margin-bottom: 10px;}
     .card .inner-col a{color: var(--charcoal);}
-    .form-map{
-        display: flex;
-        justify-content: space-between;
-    }
-    .form-map .form-col{width: 50%;}
     form{
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
-        flex-wrap: wrap;
-        gap: 1.75rem 1rem;
+        gap: 1.75rem 0;
     }
     form input{
-        width: 48%;
+        width: 100%;
         height: 3.5rem;
         padding: 0 10px;
+        border-radius: 7px;
         border: 1px solid var(--dark-color-two);
         color: var(--charcoal);
         background-color: var(--backgrd-color);
@@ -94,6 +106,7 @@
         width: 100%;
         height: 10rem;
         padding: 10px;
+        border-radius: 10px;
         color: var(--dark-color-two);
         border: 1px solid var(--dark-color-two);
         background-color: var(--backgrd-color);
@@ -102,19 +115,7 @@
         width: 50%;
         border: 0;
     }
-    .form-map .map-col{
-        width: 475px;
-        height: auto;
-    }
-    .form-map iframe{
-        width: 100%;
-        height: 100%;
-    }
 
-    @media screen and (max-width: 1250px){
-        .form-map .form-col{width: calc(100% - 425px);}
-        .form-map .map-col{width: 400px;}
-    }
     @media screen and (max-width: 1060px){
         form input{width: 100%;}
     }
