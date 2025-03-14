@@ -15,20 +15,20 @@
                 <p>Sit amet consectetur adipisicing elit inventore esse repudiandae autem corporis tempora enim aspernatur voluptas, blanditiis, dignissimos pariatur laboriosam minima dolorem nisi totam fugit voluptatum veero eum exercitationem.</p>
                 <div class="card-container">
 
-                    <div class="card">
+                    <div class="card email-card">
                         <div class="inner-col">
                             <h4>Email</h4>
                             <a href="mailto:" title="email" aria-labe="Email link">info@example.com</a>
                             <a href="mailto:" title="email" aria-labe="Email link">sales@example.com</a>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card phone-card">
                         <div class="inner-col">
                             <h4>Phone Number</h4>
                             <a href="tel:+" title="phone" aria-labe="Phone link">(123) 456 - 7891</a>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card social-card">
                         <div class="inner-col contact-social">
                             <h4>Follow Us</h4>
                             <div>
@@ -40,12 +40,13 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card address-card">
                         <div class="inner-col">
                             <h4>Location Address</h4>
-                            <a href="mailto:" title="email" aria-labe="Email link">789 Location Drive, <br /> Stanton, CA 99000</a>
+                            <a href="mailto:" title="email" class="contact-address" aria-labe="Email link">789 Location Drive, <br /> Stanton, CA 99000</a>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
@@ -55,6 +56,7 @@
 <style>
     .form-map{
         display: flex;
+        align-items: center;
         justify-content: space-between;
     }
     .form-map .form-col{
@@ -96,7 +98,7 @@
         gap: 4px;
     }
     .card .inner-col i{font-size: 1.5rem;}
-    .card .inner-col h4{margin-bottom: 1.05rem;}
+    .card .inner-col h4{margin-bottom: 12px;}
     .card .inner-col a{color: var(--backgrd-color);}
     .contact-social div{
         display: flex;
@@ -104,6 +106,7 @@
         align-items: center;
     }
     .contact-social a:last-of-type{margin-right: 0;}
+    .contact-address{line-height: 1.45;}
     form{
         display: flex;
         flex-direction: column;
@@ -134,11 +137,30 @@
     }
     form .submit-btn{width: 50%;}
 
-    @media screen and (max-width: 1060px){
-        form input{width: 100%;}
+
+    @media screen and (max-width: 1350px){
+        .form-map .form-col,.location-info{width: 48%;}
+        .email-card{order: 1;}
+        .phone-card{order: 2;}
+        .address-card{order: 3;}
+        .social-card{order: 4;}
+    }
+    @media screen and (max-width: 1025px){
+        .form-map{flex-direction: column;}
+        .location-info{
+            order: 1;
+            width: 100%;
+        }
+        .form-map .form-col{
+            order: 2;
+            width: 80%;
+        }
     }
     @media screen and (max-width: 875px){
-        .form-map{flex-direction: column;}
+        .form-map{
+            flex-direction: column;
+            gap: 2rem 0;
+        }
         .form-map .col{width: 100%;}
         .form-map .form-col{order: 2;}
         .form-map .map-col{
