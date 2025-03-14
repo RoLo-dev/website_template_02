@@ -1,32 +1,30 @@
 <header id="header">
     <div class="header-container wrapper">
-        <!-- <div class="left-col"> -->
-            <a href="#" class="logo" title="logo" aria-label="Logo">SUGO</a>
+        <a href="#" class="logo" title="logo" aria-label="Logo">SUGO</a>
 
-            <nav class="header-nav">
-                <ul>
-                    <li>
-                        <a href="">Features</a>
-                    </li>
-                    <li>
-                        <a href="">About Us</a>
-                    </li>
-                    <li>
-                        <a href="">Pricing</a>
-                    </li>
-                    <li>
-                        <a href="">Support</a>
-                    </li>
-                    <li>
-                        <a href="#" class="cta">Get Started</a>
-                    </li>
-                </ul>
-            </nav>
+        <nav class="header-nav">
+            <ul>
+                <li>
+                    <a href="">Features</a>
+                </li>
+                <li>
+                    <a href="">About Us</a>
+                </li>
+                <li>
+                    <a href="">Pricing</a>
+                </li>
+                <li>
+                    <a href="">Support</a>
+                </li>
+                <li>
+                    <a href="#" class="cta">Get Started</a>
+                </li>
+            </ul>
+        </nav>
 
-            <button class="mobile-el hamburger-btn">
-                <span class="hamburger-icon"></span>
-            </button>
-        <!-- </div> -->
+        <button class="mobile-el hamburger-btn">
+            <span class="hamburger-icon"></span>
+        </button>
     </div>
 </header>
 
@@ -67,7 +65,7 @@
 
     @media screen and (min-width: 922px){
         .header-container nav ul li a:hover{
-            color: var(--soft-color-two);
+            color: var(--dark-color-two);
             text-decoration: underline;
         }
         .mobile-el{display: none !important;}
@@ -98,9 +96,6 @@
         .hamburger-icon::after{ content: '';position: absolute;left: -5px; }
         .hamburger-icon::before{bottom: 9px;}
         .hamburger-icon::after{top: 9px;}
-        /* .animate{ width: 2.25rem;transform: rotate(45deg); }
-        .animate::after{ transform: rotate(90deg) translate(-9px); }
-        .animate::before{ opacity: 0; } */
         .animate{ background-color: transparent; }
         .animate::before{ bottom:0px;transform: rotate(45deg); }
         .animate::after{ transform: rotate(135deg) translate(-7px, 6px); }
@@ -114,7 +109,6 @@
             height: 100vh;
             text-align: center;
             transform: translate(100%, 0px);
-            /* background-color: rgba(234, 224, 208, 0.95); */
             background-color: var(--backgrd-color);
             transition: all 0.3s ease-in-out;
             z-index: 11;
@@ -158,10 +152,8 @@
     let mobileNav = document.querySelector('.header-nav');
     let hamburgerBtn = document.querySelector('.hamburger-btn');
     let hamburgerIcon = document.querySelector('.hamburger-icon')
-    // let mobileCloseIcon = document.querySelector('.mobile-close-btn')
 
     hamburgerBtn?.addEventListener('click', toggleNav)
-    // mobileCloseIcon?.addEventListener('click', toggleNav)
 
     function toggleNav(){
         mobileNav?.classList.toggle('show-nav');
