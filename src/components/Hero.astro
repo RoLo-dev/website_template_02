@@ -79,7 +79,8 @@
         .hero-container{
             flex-direction: column;
         }
-        .hero-container .col{width: 100%;}
+        .hero-container .col,
+        .img-col .big-img{width: 100%;}
         .hero-container .text-col{
             padding-right: 0;
             margin-bottom: 3rem;
@@ -90,8 +91,14 @@
     }
     @media screen and (max-width: 750px){
         .hero-container .img-col{height: 385px;}
+        .img-col .big-img{
+            border: 15px solid var(--soft-color-two);
+        }
     }
     @media screen and (max-width: 480px){
         .hero-container .img-col{height: 300px;}
+        .img-col .big-img{
+            border: 10px solid var(--soft-color-two);
+        }
     }
 </style>
