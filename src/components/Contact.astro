@@ -35,6 +35,16 @@
                         </div>
                     </div>
                     <div class="card">
+                        <div class="inner-col contact-social">
+                            <h4>Follow Us</h4>
+                            <a href="" title="Facebook" aria-label="Facebook link"><i class="fa-brands fa-square-facebook"></i></a>
+                            <a href="" title="Linkedin" aria-label="Linkedin link"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="" title="Instagram" aria-label="Instagram link"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="" title="YouTube" aria-label="YouTube link"><i class="fa-brands fa-youtube"></i></a>
+                            <a href="" title="X - twitter" aria-label="X - twitter link"><i class="fa-brands fa-x-twitter"></i></a>
+                        </div>
+                    </div>
+                    <div class="card">
                         <div class="inner-col">
                             <i class="fa-solid fa-location-dot"></i>
                         </div>
@@ -54,9 +64,15 @@
         display: flex;
         justify-content: space-between;
     }
-    .form-map .form-col{width: 35%;}
+    .form-map .form-col{
+        width: 35%;
+        background-color: #fff;
+        border-radius: 15px;
+        padding: 2rem;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    }
     .location-info{
-        width: 60%;
+        width: 62%;
         background-color: var(--soft-color-two);
         color: var(--backgrd-color);
         padding: 2rem 3rem;
@@ -65,13 +81,13 @@
     }
     section h2{
         color: var(--backgrd-color);
-        margin-bottom: 1.5rem;
+        margin-bottom: 2rem;
     }
     .location-info p{margin-bottom: 2rem;}
     .location-info .card-container{
         display: flex;
         flex-wrap: wrap;
-        gap: 2rem 14px;
+        gap: 3rem 1rem;
     }
     .location-info .card{
         width: 45%;
@@ -86,11 +102,17 @@
     }
     .card .inner-col i{font-size: 1.5rem;}
     .card .inner-col h4{margin-bottom: 10px;}
-    .card .inner-col a{color: var(--charcoal);}
+    .card .inner-col a{color: var(--backgrd-color);}
+    .contact-social a{
+        display: inline-block;
+        margin-right: 10px;
+    }
+    .contact-social a:last-of-type{margin-right: 0;}
     form{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        font-size: 1.05rem;
         gap: 1.75rem 0;
     }
     form input{
@@ -99,22 +121,22 @@
         padding: 0 10px;
         border-radius: 7px;
         border: 1px solid var(--dark-color-two);
-        color: var(--charcoal);
-        background-color: var(--backgrd-color);
+        color: var(--dark-color-two);
     }
     form textarea{
         width: 100%;
         height: 10rem;
         padding: 10px;
+        line-height: 1.45;
         border-radius: 10px;
         color: var(--dark-color-two);
         border: 1px solid var(--dark-color-two);
+    }
+    form input:focus, form input:active,
+    form textarea:focus, form textarea:active{
         background-color: var(--backgrd-color);
     }
-    form .submit-btn{
-        width: 50%;
-        border: 0;
-    }
+    form .submit-btn{width: 50%;}
 
     @media screen and (max-width: 1060px){
         form input{width: 100%;}
